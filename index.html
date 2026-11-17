@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100b18" />
+  <title>A Little Surprise for Leela ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="page">
+    <section class="card" id="welcome" aria-labelledby="welcome-title">
+      <div class="eyebrow"><span class="tiny-heart">♥</span> MADE WITH LOVE <span class="tiny-heart">♥</span></div>
+      <div class="heart-orbit" aria-hidden="true">
+        <span class="orbit orbit-a"></span><span class="orbit orbit-b"></span>
+        <span class="main-heart">♥</span><span class="orbit-dot dot-one">♥</span><span class="orbit-dot dot-two">✦</span>
+      </div>
+      <p class="small-line">A little something, just for you</p>
+      <h1 id="welcome-title">Hey, Leela<span class="pink">.</span></h1>
+      <p class="intro">I made a tiny surprise for someone<br class="desktop-break"> who deserves a little extra happiness.</p>
+      <button class="primary-button" id="open-surprise">Open your surprise <span aria-hidden="true">♡</span></button>
+      <p class="hint">Psst… turn your sound on if you like a little magic.</p>
+    </section>
+
+    <section class="card birthday-card hidden" id="birthday" aria-labelledby="birthday-title" aria-hidden="true">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <div class="eyebrow"><span class="tiny-heart">♥</span> YOUR SPECIAL LITTLE MOMENT <span class="tiny-heart">♥</span></div>
+      <div class="cake" aria-hidden="true">
+        <div class="candle"><span class="flame"></span></div>
+        <div class="cake-top"></div><div class="cake-body"><span class="icing"></span><span class="sprinkles">·　·　·　·　·</span></div>
+        <div class="cake-plate"></div>
+      </div>
+      <p class="small-line">A wish, wrapped just for you</p>
+      <h2 id="birthday-title">Advance Happy<br><span class="pink">Birthday, Leela!</span></h2>
+      <p class="wish">Advance Happy Birthday! You deserve all the happiness in the world. ❤️</p>
+      <div class="divider-heart"><span></span> ♥ <span></span></div>
+      <p class="personal-note">May your days be filled with little reasons to smile, beautiful surprises, and all the love your heart can hold.</p>
+      <button class="music-button" id="music-button" type="button" aria-pressed="false">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span id="music-label">Play birthday music</span>
+        <span aria-hidden="true">♪</span>
+      </button>
+      <audio id="birthday-music" src="assets/birthday-melody.wav" loop preload="auto"></audio>
+      <button class="secondary-button" id="heart-button">Send you a little love <span aria-hidden="true">♥</span></button>
+      <p class="footer-note" id="footer-note">A tiny page, with a whole lot of heart.</p>
+
+      <section class="memories-section" aria-labelledby="memories-title">
+        <p class="small-line">A few moments I want to keep close</p>
+        <h3 id="memories-title">Little memories, <span class="pink">big feelings.</span></h3>
+        <p class="gallery-intro">Some moments are special simply because they’re ours. ❤️</p>
+        <div class="memory-grid">
+          <figure class="memory memory-tall"><img src="assets/leela-memory-1.png" alt="Leela smiling in a saree" loading="lazy"><figcaption>Your beautiful smile</figcaption></figure>
+          <figure class="memory"><img src="assets/leela-memory-2.png" alt="Leela enjoying a moment outdoors" loading="lazy"><figcaption>Little adventures</figcaption></figure>
+          <figure class="memory"><img src="assets/leela-memory-3.png" alt="A close-up memory of Leela" loading="lazy"><figcaption>My favourite kind of view</figcaption></figure>
+          <figure class="memory"><img src="assets/leela-memory-4.png" alt="Leela smiling in a casual outfit" loading="lazy"><figcaption>Just being you</figcaption></figure>
+          <figure class="memory memory-wide"><img src="assets/our-memory-1.png" alt="A sweet couple moment" loading="lazy"><figcaption>A moment close to my heart</figcaption></figure>
+          <figure class="memory memory-wide"><img src="assets/our-memory-2.png" alt="A photo together by the water" loading="lazy"><figcaption>More memories to come…</figcaption></figure>
+        </div>
+      </section>
+
+      <button class="replay-button" id="replay">Replay the surprise ↺</button>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite">Sending a little love your way… ❤️</div>
+  <script src="script.js"></script>
+</body>
+</html>
